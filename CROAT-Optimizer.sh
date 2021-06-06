@@ -1,11 +1,14 @@
 #!/bin/bash
 
+# Default Settings
 croat_unit=100000000000
 walletd_port=46349
 interval=5
 duration=120
 anonymity=1
 optimize_value=10000
+
+# Script Init
 
 echo ""
 echo ""
@@ -26,7 +29,7 @@ select option in "${options[@]}"; do
     case $option in
         "Preview Optimization")    
             echo ""
-            echo "######### WALLET PREVIEW OPTIMIZATON #########"
+            echo "######### WALLET PREVIEW OPTIMIZATION #########"
             echo ""
             read -p "Please, specify CROAT walletd RPC Port (Default: $walletd_port): " -e -i $walletd_port walletd_port
             read -p "Please, specify optimization value: (Default: $optimize_value CROAT): " -e -i $optimize_value optimize_value
@@ -37,7 +40,7 @@ select option in "${options[@]}"; do
             ;;
         "Optimize Wallet") 
             echo ""
-            echo "######### WALLET OPTIMIZATON #########"
+            echo "######### WALLET OPTIMIZATION #########"
             echo ""
             read -p "Please, specify CROAT walletd RPC Port (Default: $walletd_port): " -e -i $walletd_port walletd_port
             read -p "Please, specify interval between fusion transactions (Default $interval): " -e -i $interval interval
