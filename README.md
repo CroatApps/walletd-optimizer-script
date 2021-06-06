@@ -1,8 +1,7 @@
 # Optimizer utility
 
-An additional utility for WALLETD RPC wallet, called optimizer is included on the "CROAT Node". 
-It allows an easy way to automate the execution of wallet outputs optimization, controlling the maximum duration it is allowed to run, 
-the interval between interactions so the local mempool does not get flooded, and some other handy command line options. 
+An additional utility for WALLETD RPC wallet, called **_optimizer_** is included on the "**CROAT Node**". 
+It allows an easy way to automate the execution of wallet outputs optimization, controlling the maximum duration it is allowed to run, the interval between interactions so the local mempool does not get flooded, and some other handy command line options. 
 It is possible to run the optimizer on a preview mode, where no actual action is taken, but it can be verified the number of wallets that are eligible to be optimized.
 
 The interval is a pause between each interaction, where an interaction is the creation of a fusion transaction for a wallet on the list.
@@ -33,7 +32,7 @@ As any other regular transactions, the coins used stays locked until get into a 
 
 ## This Script
 
-We have prepared this script to facilitate the work of optimising the wallet. 
+We have prepared this script to facilitate the work of optimizing the wallet. 
 If you wish you can directly run the "optimizer" command included in "CROAT Node" instead of this script. 
 
 ## How to run this script:
